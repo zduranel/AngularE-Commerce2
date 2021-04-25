@@ -34,11 +34,9 @@ namespace API.Controllers
         }
     
         [HttpGet("{id}")]
-        public ActionResult<Product> GetProduct(int id)
         {
 
 
-            return _context.Products.Find(id);
         }
 
         
