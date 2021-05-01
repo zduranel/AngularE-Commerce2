@@ -1,8 +1,5 @@
 ﻿using API.Core.DbModels;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace API.Core.Interfaces
@@ -17,6 +14,11 @@ namespace API.Core.Interfaces
         /// </summary>
         /// <returns></returns>
         Task<IReadOnlyList<Product>> GetProductAsync();
+
+        Task<IReadOnlyList<ProductType>> GetProductTypesAsync();
+        Task<IReadOnlyList<ProductBrand>> GetProductBrandAsync();
+
+      
 
     }
 }
