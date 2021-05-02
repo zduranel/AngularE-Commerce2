@@ -1,5 +1,4 @@
 ﻿using API.Core.DbModels;
-using API.Core.Specifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +11,5 @@ namespace API.Core.Interfaces
     {
         Task<T> GetByIdAsync(int id);
         Task<IReadOnlyList<T>> ListAllAsync();
-
-        Task<T> GetEntityWithSpec(ISpecification<T> spec);
-
-        Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec);
     }
 }
