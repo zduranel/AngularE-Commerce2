@@ -9,6 +9,10 @@ namespace API.Core.Specifications
 {
     public class BaseSpicification<T> : ISpecification<T>
     {
+        public BaseSpicification()
+        {
+
+        }
 
         public BaseSpicification(Expression<Func<T, bool>> criteria)
         {
